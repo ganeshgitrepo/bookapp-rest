@@ -4,5 +4,9 @@
         <non-jta-data-source>java:comp/env/jdbc/bookapp</non-jta-data-source>
         <class>ch.bfh.swos.bookapp.model.Author</class>
 		<class>ch.bfh.swos.bookapp.model.Book</class>
+        <properties>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+        </properties>
 	</persistence-unit>
 </persistence>
